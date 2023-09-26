@@ -21,10 +21,9 @@ public class CargaComboController {
 	@Autowired
 	private TipoService tipoService;
 	
-	
 	@GetMapping(value = "/listaPais")
 	@ResponseBody
-	public List<Pais> cargaPais(){
+	public List<Pais> cargaPais() {
 		return paisService.listaPais();
 	}
 	
